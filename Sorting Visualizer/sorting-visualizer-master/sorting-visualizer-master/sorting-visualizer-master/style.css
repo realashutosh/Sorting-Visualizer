@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+body {
+    background: #000000;
+    border-bottom: 10px solid rgb(255, 164, 36);
+    animation: color-change 2s linear infinite;
+}
+nav {
+    display: flexbox;
+    flex-direction: column-reverse;
+    background: linear-gradient(0deg, #000, #272727);
+    width: 100%;
+    margin-bottom: 100px;
+    border-bottom: 5px solid white;
+    border-image: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+
+    
+}
+nav:after {
+    
+    content: "";
+    clear: both;
+    display: table;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    color: #1b1b1b;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+/* nav ul li a:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #33ffff;
+} */
+.clickable:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(255, 149, 0);
+    cursor: pointer;
+}
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul :hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    background-color: #1b1b1b;
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid;
+}
+
+.range-input {
+    background: rgb(255, 179, 0);
+    -webkit-appearance: none;
+    height: 2px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff342;
+    cursor: pointer;
+}
+.range-input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff342;
+    cursor: pointer;
+}
+
+@keyframes color-change {
+    0%,100%{
+      border-color:#ff1493;
+    }
+  
+    25%{
+      border-color:#8b4513;
+    }
+    
+    50%{
+      border-color:#0091EA;
+    }
+    
+    75%{
+      border-color:#9400d3;
+    }
+  }
+
+  
+  nav:after {
+    filter: blur(50px);
+  }
