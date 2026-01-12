@@ -55,32 +55,5 @@ This project is a **terminal-based sorting visualizer** written in C++. It uses 
 1. When you run the program, a randomized array will be displayed as vertical bars.
 2. Open the menu in the console and choose an option:
    - Example: Press `5` to run **Quick Sort**.
-3. Watch the array get sorted step by step with animations.
-
----
-
-## Example Output
-
-```
-Sorting Visualizer (n=50, delay=20ms)
-Bubble Sort: comparing j and j+1
-
-██████ █████ ███ ██████ ███ ...
-```
-
-(Bars update live as sorting progresses.)
-
----
-
-## Notes
-
-- Increase array size (`n`) for smoother bar animations.
-- Use smaller sizes if you want to track numbers precisely.
-- If output looks broken, ensure your terminal supports ANSI escape codes.
-
----
-
-## License
-
-This project is free to use, modify, and distribute for educational purposes.
+3. Watch the array get sorted step by step with animations
 
